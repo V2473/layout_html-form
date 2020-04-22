@@ -11,7 +11,8 @@
 </head>
 
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off"
+    onsubmit="onSubmit()">
     <fieldset>
       <legend>Personal information</legend>
       <div>
@@ -40,12 +41,11 @@
       <legend>Registration</legend>
       <div>
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com" required minlength="8"
-          maxlength="20">
+        <input type="email" name="email" id="email" placeholder="email@example.com" required>
       </div>
       <div>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
       </div>
     </fieldset>
 
@@ -53,10 +53,10 @@
       <legend>An interesting fact about you!</legend>
       <div>
         Do you love cats?
-        <input type="radio" id="yes" name="cats" value="yes">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="cats" value="no">
-        <label for="no">No</label>
+        <input type="radio" id="catsYes" name="cats" value="yes">
+        <label for="catsYes">Yes</label>
+        <input type="radio" id="catsNo" name="cats" value="no">
+        <label for="catsNo">No</label>
       </div>
       <div>
         <label for="color">What is your favorite color?</label>
@@ -95,7 +95,7 @@
       </div>
     </fieldset>
 
-    <input type="submit" onsubmit="onSubmit()">
+    <input type="submit">
   </form>
 
   <script type="text/javascript" src="./main.js"></script>
