@@ -11,8 +11,7 @@
 </head>
 
 <body>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off"
-    onsubmit="onSubmit()">
+  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
     <fieldset>
       <legend>Personal information</legend>
       <div>
@@ -95,7 +94,7 @@
       </div>
     </fieldset>
 
-    <input type="submit">
+    <input type="submit" name="button" value="Submit" onsubmit = "onSubmit()">
   </form>
 
   <script type="text/javascript" src="./main.js"></script>
