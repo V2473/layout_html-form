@@ -3,7 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta
+    name="viewport"
+    content="
+      width=device-width,
+      user-scalable=no,
+      initial-scale=1.0,
+      maximum-scale=1.0,
+      minimum-scale=1.0
+    "
+  >
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Form</title>
   <link rel="stylesheet" href="./style.css">
@@ -23,7 +32,14 @@
       </div>
       <div>
         <label for="age">How old are You?</label>
-        <input type="number" name="age" id="age" value="12" min="0" max="150">
+        <input
+          type="number"
+          name="age"
+          id="age"
+          value="12"
+          min="0"
+          max="150"
+        >
       </div>
       <div>
         <label for="birthday">Full date of birth:</label>
@@ -39,11 +55,24 @@
       <legend>Registration</legend>
       <div>
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com" required>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@example.com"
+          required
+        >
       </div>
       <div>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          minlength="8"
+          maxlength="20"
+          required
+        >
       </div>
     </fieldset>
 
@@ -51,9 +80,19 @@
       <legend>An interesting fact about you!</legend>
       <div>
         Do you love cats?
-        <input type="radio" id="catsYes" name="catsYes" value="yes">
+        <input
+          type="radio"
+          id="catsYes"
+          name="catsYes"
+          value="yes"
+        >
         <label for="catsYes">Yes</label>
-        <input type="radio" id="catsNo" name="catsNo" value="no">
+        <input
+          type="radio"
+          id="catsNo"
+          name="catsNo"
+          value="no"
+        >
         <label for="catsNo">No</label>
       </div>
       <div>
@@ -62,11 +101,21 @@
       </div>
       <div>
         <label for="bedtime">What time do you go to bed?</label>
-        <input type="time" name="bedtime" id="bedtime" step="2">
+        <input
+          type="time"
+          name="bedtime"
+          id="bedtime"
+          step="2"
+        >
       </div>
       <div>
         <label for="cars">What are your favorite brand of cars?</label>
-        <select id="cars" name="cars" size="4" multiple>
+        <select
+          id="cars"
+          name="cars"
+          size="4"
+          multiple
+        >
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="Lada">Lada</option>
@@ -74,7 +123,12 @@
       </div>
       <div>
         <label for="work-rate">How do you rate our work?</label>
-        <input type="range" name="work-rate" id="work-rate" value="0">
+        <input
+          type="range"
+          name="work-rate"
+          id="work-rate"
+          value="0"
+        >
       </div>
     </fieldset>
 
@@ -82,7 +136,12 @@
       <legend>Additional info:</legend>
       <div>
         <label for="comments">Comments:</label>
-        <textarea name="comments" id="comments" rows="2" cols="24"></textarea>
+        <textarea
+          name="comments"
+          id="comments"
+          rows="2"
+          cols="24"
+        ></textarea>
       </div>
       <div>
         <label for="recommendation">Would you recommend us?</label>
@@ -93,7 +152,12 @@
       </div>
     </fieldset>
 
-    <button type="submit" name="button" value="Submit" onsubmit = "onSubmit()">Submit</button>
+    <button
+      type="submit"
+      name="button"
+      value="Submit"
+      onsubmit = "onSubmit()"
+    >Submit</button>
   </form>
 
   <script type="text/javascript" src="./main.js"></script>
